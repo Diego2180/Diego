@@ -1,125 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap');
-*{
+
+* {
 	margin: 0;
 	padding: 0;
-	
-}
- 
- /* Con typeR declaramos las tipografias ya seleccionadas */
-
-.typeR{
-	font-family: relaway, sans-serif;
-	font-weight: 400;
-}
-
-.typeRmedium{
-	font-weight: 500;
-}
-
-.typeRbold{
-	font-weight: 700;
-}
-
-/* Con estas clases podemos declarar colores para luego utilizarlos. Ejemplo bgColorBlack (background-color) bgColorBlack. Sirve si ya tenemos los colores definidos que vamos a utilizar en nuestro sitio. "Aca no esta aplicado"*/
-
-.bgColorBlack{
-	background-color:#121212;
-}
-
-.bgColor{
-	color:#121212 ;
-}
-
-
-.bgColorYellow{
-	background-color:#E0FF00;
-}
-
-.bgYellow{
-	color:#E0FF00 ;
-}
-
-body{
-	background-color:  #f2f1e8  ;
-}
-#header{
-	width: auto;
-	height: 150px;
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-	background-color: #f8f5df  ;
-	padding: 10px;
+	box-sizing: border-box;
 
 }
 
-#header .marca p{
-	text-align: center;
-	font-size: 4rem;
-}
-
-#header .logo img{
-	width: 110px;
-	height: 110px;
-	border-radius: 100px;
-	padding: 0.25em 0.25em;
-	transition: all 0.5s ease;
-	
-}
-
-.logo img:hover{
-			transform: traslate 10px 10px;
-			background: linear-gradient(90deg, 100%);
-			width: 150px;
-			transform: scale(0.9);
-}
-
- #header {
-	font-size: 30px;
-	color: #000005 ;
-}
-
-#header ul{
-	list-style-type: none;
-}
-
-#header li{
-	display:block;
-	padding: 0 20px;
-	color:#121212;
-}
-
-#header li a{
-	color: #040404;
-	font-size: 20px;
-	text-decoration: none;
-	color: #000005 ;
-
-}
-
-body .fotoFondo{
+body {
 	width: 100%;
 	height: 800px;
-	background-image: url(../img/cadena10.jpg);
+	background-image: url(../img/cadena1.jpg);
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
 }
 
-form{
+.titulo {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	background-color: #fff6ed;
+	box-sizing: border-box;
+
+}
+
+.cabecera {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff6ed;
+	font-size: 10px;
+
+
+}
+
+.cabecera .marca p {
+	height: 50px;
+	margin-left: -5px;
+	font-size: 1rem;
+	font-family: serif;
+}
+
+.cabecera .logo img {
+	width: 100px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 70px;
+	height: 70px;
+	border-radius: 100px;
+
+}
+
+.nav-item {
+	display: flex;
+	padding-right: 6rem;
+	padding-left: 6rem;
+	font-family: serif;
+	color: black;
+}
+
+
+form {
 	width: 450px;
 	margin: auto;
 	margin-bottom: 20px;
-	background: rgba(0,0,0,0.4);
+	background: rgba(0, 0, 0, 0.4);
 	padding: 10px 20px;
 	box-sizing: border-box;
 	margin-top: 15px;
-	border-radius: 5px;	
+	border-radius: 5px;
 	/*100vw alto de la ventana y 100 vh ancho de la ventana*/
 }
 
-form h2{
-	color:#fdfefe   ;
+form h2 {
+	color: #fdfefe;
 	text-align: center;
 	margin: 0;
 	font-size: 30px;
@@ -127,7 +87,8 @@ form h2{
 
 }
 
-input, textarea{
+input,
+textarea {
 	width: 100%;
 	margin-bottom: 20px;
 	padding: 7px;
@@ -136,57 +97,59 @@ input, textarea{
 	border: none;
 }
 
-textarea{
+textarea {
 	min-width: 100px;
 	min-height: 200px;
 	max-width: 100%;
 }
 
-#boton{
+#boton {
 	background: #31384A;
 	color: #fff;
-	padding:10px;
-}
-
-#boton:hover{
-	cursor: pointer;
-}
-
-.pie{
-	margin: auto;
-	background-color:   #f3e4f5;
-	width: auto;
-}
-
-table{
-		text-align: center;
-		width: 100%;
-}
-
-th, td{
 	padding: 10px;
 }
 
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
+#boton:hover {
+	cursor: pointer;
 }
+
+.pie {
+	margin: auto;
+	background-color: #f3e4f5;
+	width: auto;
+}
+
+table {
+	text-align: center;
+	width: 100%;
+}
+
+th,
+td {
+	padding: 10px;
+}
+
+.float {
+	position: fixed;
+	width: 60px;
+	height: 60px;
+	bottom: 40px;
+	right: 40px;
+	background-color: #25d366;
+	color: #FFF;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 30px;
+	box-shadow: 2px 2px 3px #999;
+	z-index: 100;
+}
+
 .float:hover {
 	text-decoration: none;
 	color: #25d366;
-  background-color:#fff;
+	background-color: #fff;
 }
 
-.my-float{
-	margin-top:16px;
+.my-float {
+	margin-top: 16px;
 }
