@@ -60,12 +60,11 @@ body {
 
 .cabecera {
 	width: 100%;
-	height: 170px;
+	height: 140px;
 	display: flex;
 	justify-content: center;
 	background-color: #ffe6b3;
 	font-size: 10px;
-
 }
 
 
@@ -80,10 +79,8 @@ body {
 }
 
 .cabecera .logo img {
-	width: 100px;
+	width: 60px;
 	height: 60px;
-	width: 90px;
-	height: 90px;
 	border-radius: 100%;
 
 }
@@ -99,15 +96,23 @@ body {
 	margin-bottom: 15px;
 }
 
+.navbar {
+	width: 100%;
+	height: 30px;
+	display: flex;
+	background-color: rgb(241, 225, 133);
+
+}
 
 .nav-item {
 
+	font-size: 1.2rem;
 	padding-right: 6rem;
 	padding-left: 6rem;
 	font-family: serif;
 	color: black;
-}
 
+}
 
 .titulo {
 	width: 100%;
@@ -115,7 +120,8 @@ body {
 	display: table;
 	text-align: center;
 	margin: auto;
-	background-color: #f0f7f7;
+	background: linear-gradient(180deg, hsl(27, 67%, 47%) 0%, #eeeee9 57%, rgb(211, 135, 35) 100%);
+	font-family: serif;
 }
 
 .titulo h3 {
