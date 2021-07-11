@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 * {
 	margin: 0;
@@ -10,12 +10,12 @@
 /* Con typeR declaramos las tipografias ya seleccionadas */
 
 .typeR {
-	font-family: relaway, sans-serif;
+	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 }
 
 .typeRmedium {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .typeRbold {
@@ -41,97 +41,109 @@
 	color: #E0FF00;
 }
 
-body {
-	background-color: #ffffe6;
+.MV {
+	background-color: #e6e6e6;
 }
 
-.centro {
-	width: 100%;
-	height: 30px;
+.cadena {
+	display: flex;
+	height: 100vh;
+	background-image: url(../img/anillo4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.todos {
+	position: absolute;
+	font-size: 3rem;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	margin-top: 50%;
+	bottom: 0;
+	color: white;
+}
+
+.off {
+	position: absolute;
+	font-size: 3rem;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
 	margin: 0;
-	display: flex;
-	justify-content: center;
-	margin-top: 5px;
-	color: #ffffff;
-	font-size: 1rem;
-	background-color: #000000;
-	font-family: serif;
+	bottom: 0;
+	color: white;
 }
 
-.cabecera {
-	width: 100%;
-	height: 140px;
-	display: flex;
-	justify-content: center;
-	background-color: #ffe6b3;
-	font-size: 10px;
+.abonando {
+	position: absolute;
+	font-size: 3rem;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	margin: 0;
+	bottom: 0;
+	color: white;
 }
 
-
-.cabecera .logo {
+.navbar-light {
+	background-color: rgba(0, 0, 0, 0.2);
+	position: fixed;
 	width: 100%;
-	height: auto;
+	margin-top: 0;
+	height: 70px;
+	padding: 20px;
+	z-index: 100;
+}
+
+.navbar_titulo {
+	font-size: 35px;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: #fffffe;
+	text-decoration: none !important;
+	transition-duration: 0, 1s;
+}
+
+.a {
+	background-color: transparent;
+}
+
+.navbar-nav {
+	width: 100%;
+	margin-right: 0;
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
 	justify-content: flex-end;
 }
 
-.cabecera .logo img {
-	width: 60px;
-	height: 60px;
-	border-radius: 100%;
-
+.dropdown-menu {
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.cabecera p {
-	width: 100%;
-	height: 50px;
+.dropdown-item {
+	color: #fffffe;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.navbar-nav .nav_secciones {
+	margin-left: 15px;
+	font-size: 20px;
+	color: white;
+	font-family: Montserrat;
+	font-weight: 600;
+}
+
+.anillos {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.5rem;
-	font-family: serif;
-	margin-bottom: 15px;
+	height: 100vh;
+	background-image: url(../img/anillo4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
 }
 
-.navbar{
-	width: 100%;
-	height: 30px;
-	display: flex;
-	background-color: rgb(241, 225, 133);
-	
-}
-.nav-item {
-
-	font-size: 1.2rem;
-	padding-right: 6rem;
-	padding-left: 6rem;
-	font-family: serif;
-	color: black;
-	
-}
-
-
-.titulo {
-	width: 100%;
-	height: 150px;
-	display: table;
-	text-align: center;
-	margin: auto;
-	background: linear-gradient(180deg, hsl(27, 67%, 47%) 0%, #eeeee9 57%, rgb(211, 135, 35) 100%);
-	font-family: serif;
-}
-
-.titulo h3 {
-	text-align: center;
-	font-size: 4rem;
-	vertical-align: middle;
-	display: table-cell;
-}
-
-.destacado {
+a .destacado {
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -255,45 +267,101 @@ body {
 	padding: 80px;
 }
 
-.pie {
+
+footer {
+	width: 100%;
+	background: #202020;
+	color: white;
+
+}
+
+.container-footer-all {
+	width: 100%;
+	max-width: 1200px;
 	margin: auto;
-	background-color: #ffe6ff;
-	width: 100%;
-	height: 200px;
+	padding: 40px;
 }
 
-table {
+.container-footer {
+	display: flex;
+	justify-content: space-between;
+	font-family: Montserrat;
+	font-weight: 400;
+}
 
+.columna1 {
+	width: 33%;
+}
+
+.columna1 h3 {
+	font-size: 22px;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.columna1 p {
+	font-size: 14px;
+	margin-top: 20px;
+	color: #c7c7c7;
+}
+
+.columna2 {
+	width: 33%;
+}
+
+.columna2 h3 {
+	font-size: 22px;
+}
+
+.row {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row img {
+	width: 36px;
+	height: 36px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.columna3 {
+	width: 33%;
+}
+
+.columna3 h1 {
+	font-size: 22px;
 	text-align: center;
-	width: 100%;
+	font-family: Montserrat;
+	font-weight: 400;
+	padding: 5px;
 }
 
-th,
-td {
+.row2 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.row2 label {
+	font-size: 14px;
+	margin-top: 5px;
+	margin-left: 10px;
+	max-width: 140px;
+	color: #c7c7c7;
+}
+
+.container-pie {
+	width: 100%;
+	background: #101010;
+	display: flex;
 	padding: 10px;
-}
-
-.float {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 40px;
-	right: 40px;
-	background-color: #25d366;
-	color: #FFF;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 30px;
-	box-shadow: 2px 2px 3px #999;
-	z-index: 100;
-}
-
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-	background-color: #fff;
-}
-
-.my-float {
-	margin-top: 16px;
+	justify-content: center;
+	color: #c7c7c7;
+	font-family: Montserrat;
+	font-weight: 600;
 }

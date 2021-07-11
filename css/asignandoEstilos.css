@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 * {
 	margin: 0;
@@ -10,12 +10,12 @@
 /* Con typeR declaramos las tipografias ya seleccionadas */
 
 .typeR {
-	font-family: relaway, sans-serif;
+	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 }
 
 .typeRmedium {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .typeRbold {
@@ -41,8 +41,8 @@
 	color: #E0FF00;
 }
 
-body {
-	background-color: #ffffe6;
+.MV {
+	background-color: #e6e6e6;
 }
 
 .centro {
@@ -51,147 +51,197 @@ body {
 	margin: 0;
 	display: flex;
 	justify-content: center;
-	margin-top: 5px;
 	color: #ffffff;
 	font-size: 1rem;
 	background-color: #000000;
-	font-family: serif;
+	font-family: Montserrat;
+	font-weight: 700;
 }
 
-.cabecera {
-	width: 100%;
-	height: 140px;
-	display: flex;
-	justify-content: center;
-	background-color: #ffe6b3;
-	font-size: 10px;
+.centro p {
+	margin-top: 2px
 }
 
+.todos{
+	position: absolute;
+	font-size: 3rem;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	margin-top: 50%;
+	bottom: 0;
+	color: white;
+}
 
-.cabecera .logo {
+.off{
+	position: absolute;
+	font-size: 3rem;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	margin: 0;
+	bottom: 0;
+	color: white;
+}
+
+.abonando{
+	position: absolute;
+	font-size: 3rem;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
+	margin: 0;
+	bottom: 0;
+	color: white;
+}
+
+.navbar-light {
+	background-color: rgba(0, 0, 0, 0.2);
+	position: fixed;
 	width: 100%;
-	height: auto;
+	margin-top: 0;
+	height: 70px;
+	padding: 20px;
+	z-index: 100;
+}
+
+.navbar_titulo {
+	font-size: 35px;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: #fffffe;
+	text-decoration: none !important;
+	transition-duration: 0, 1s;
+}
+
+.a {
+	background-color: transparent;
+}
+
+.navbar-nav {
+	width: 100%;
+	margin-right: 0;
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
 	justify-content: flex-end;
 }
 
-.cabecera .logo img {
-	width: 60px;
-	height: 60px;
-	border-radius: 100%;
-
+.dropdown-menu {
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.cabecera p {
-	width: 100%;
-	height: 50px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 1.5rem;
-	font-family: serif;
-	margin-bottom: 15px;
-}
-
-.navbar{
-	width: 100%;
-	height: 30px;
-	display: flex;
-	background-color: rgb(241, 225, 133);
-	
-}
-.nav-item {
-
-	font-size: 1.2rem;
-	padding-right: 6rem;
-	padding-left: 6rem;
-	font-family: serif;
-	color: black;
-	
-}
-
-
-.tendencias {
-	width: 100%;
-	height: 100px;
-	margin-top: 20px;
-	font-family: serif;
+.dropdown-item {
+	color: #fffffe;
+	font-family: Montserrat;
 	font-weight: 400;
-	font-size: 2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+}
+
+.navbar-nav .nav_secciones {
+	margin-left: 15px;
+	font-size: 20px;
+	color: white;
+	font-family: Montserrat;
+	font-weight: 600;
 
 }
 
+.cadena {
+	display: flex; 
+	height: 100vh;
+	background-image: url(../img/anillo5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.categorias {
+	width: 30%;
+	height: 250px;
+	display: flex;
+	margin-left: auto;
+	margin-right: auto;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+}
+
+.categorias .tendencias {
+	font-size: 2rem;
+	font-family: Montserrat;
+	font-weight: 400;
+}
 
 .fotos10 {
 	width: 100%;
-	height: 400px;
-	display: flex;
-	margin: 5px;
+	height: 690px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffffbb;
 	justify-content: center;
-	align-items: center;
-
+	display: grid;
+	justify-self: center;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 200px;
+	padding: 20px;
+	grid-gap: 20px
 }
 
-
-
-
-.fotos10 img {
-	width: 300px;
-	height: 300px;
-	justify-content: center;
-	align-items: center;
-	padding: 0;
-	margin: 20px;
-	border-radius: 10px;
-	font-size: #0b0b0a;
+.galeria--fotos img {
+	width: 100%;
+	height: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	object-fit: cover;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
 }
 
+.galeria--fotos:nth-child(4) {
+	grid-row-start: span 2;
+}
 
+.galeria--fotos:nth-child(2) {
+	grid-column-start: span 2;
+}
 
+.galeria--fotos:nth-child(3) {
+	grid-row-start: span 2;
+}
 
+.galeria--fotos:nth-child(7) {
+	grid-column-start: span 2;
+}
+
+.galeria--fotos {
+	position: relative;
+}
+
+.galeria--titulos {
+	width: 100%;
+	margin: 0;
+	font-family: Montserrat;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7))
+}
 
 h3 {
 	padding: 5px;
 	text-align: center;
 	font-size: 15px;
 
-	font-family: serif;
 }
-
-
-
-h2 {
-	text-align: center;
-	font-size: 15px;
-	margin-top: 5px;
-	font-family: serif;
-}
-
-
-
 
 .logo2 {
 	width: 100%;
-	height: 150px;
+	height: 250px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 100px;
 
 }
 
-
-
-
 .logo2 img {
-	width: 100px;
-	height: 100px;
+	width: 140px;
+	height: 140px;
 	margin-left: auto;
 	margin-right: auto;
 	border-radius: 100px;
@@ -200,402 +250,165 @@ h2 {
 
 }
 
-
-
 .descubrimas {
-	width: 100%;
-	height: 150px;
+	width: 30%;
+	height: 100px;
 	display: flex;
-	font-family: serif;
-	font-size: 2rem;
-	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	align-items: center;
 	justify-content: center;
+	font-size: 2rem;
+	font-family: Montserrat;
+	font-weight: 400;
+	text-align: center;
+
 
 }
-
-
 
 .contenedor {
 	width: 100%;
-	height: 900px;
-	margin-bottom: 10px;
-	margin: 10px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-
-
-}
-
-.contenedor img {
-	border-radius: 10px;
-}
-
-.contenedor .collar img {
-	width: 350px;
-	height: 350px;
-	margin: 10PX;
-}
-
-
-
-.contenedor .anillo img {
-	width: 350px;
-	height: 350px;
-	margin: 10PX;
-}
-
-
-
-.contenedor .cadenas img {
-	width: 350px;
-	height: 350px;
-	margin: 10PX;
-}
-
-
-
-
-.contenedor .conjunto img {
-	width: 300px;
-	height: 300px;
-	margin: 20PX;
-
-}
-
-
-.contenedor .aros img {
-	width: 300px;
-	height: 300px;
-	margin: 20PX;
-
-
-}
-
-
-
-.contenedor img {
-	display: flex;
-	flex-wrap: wrap;
-	width: 150px;
-	height: 150px;
-	transition: all 0.8s ease;
-
-}
-
-.contenedor img:hover {
-	transform: scale(0.9);
-
-}
-
-
-/*Secccion Collares*/
-
-.titulo {
-	width: 100%;
-	height: 150px;
-	display: table;
-	text-align: center;
-	margin: auto;
-	background-color: #ecdcb3;
-}
-
-.titulo h3 {
-	text-align: center;
-	font-size: 5rem;
-	vertical-align: middle;
-	display: table-cell;
-}
-
-/*Estilos de la galeria*/
-
-.galeria-container {
-	width: 100%;
-	height: auto;
-	display: flex;
-
-
-}
-
-.galeria--item {
-	width: 33.33%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-}
-
-
-.galeria--item img {
-	width: 300px;
-	height: 300px;
-	flex-wrap: wrap;
-	align-items: center;
-	padding: 10px;
-	margin: 5px;
-	border-radius: 5%;
-}
-
-
-.galeria--titulo {
-	position: absolute;
-	bottom: 0;
-	color: white;
-	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0));
-	width: auto;
-	margin: 0;
-	padding: 10px;
-}
-
-/*Seccion Productos*/
-
-.titulo {
-	width: 100%;
-	height: 150px;
-	display: table;
-	text-align: center;
-	margin: auto;
-	background-color: #f0f7f7;
-}
-
-.titulo h3 {
-	text-align: center;
-	font-size: 4rem;
-	vertical-align: middle;
-	display: table-cell;
-}
-
-/*Estilos de la galeria*/
-
-.galeria-container {
-	width: 100%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-
-}
-
-.galeria--item {
-	width: 25%;
-	height: auto;
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	justify-content: center;
-	position: relative;
-}
-
-.galeria--item img {
-	width: 300px;
-	height: 300px;
-	padding: 0;
-}
-
-.galeria--titulo {
-	position: absolute;
-	bottom: 0;
-	color: white;
-	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0));
-	width: 50%;
-	margin: 0;
-	padding: 10px;
-}
-
-/*Seccion Cadena*/
-
-
-
-/*Seccion nosotros*/
-
-
-.nosotros {
-	width: 100%;
-	height: auto;
-	margin-top: 30px;
-
-}
-
-
-.img-nosotros {
-	width: 100%;
-
-
-}
-
-.img-nosotros img {
-	width: 400px;
-	height: 400px;
-	border-radius: 5%;
-	margin: auto;
-}
-
-
-.texto-nosotros hr {
-	width: 100px;
-	height: 10px;
-	margin: auto;
-	border-style: none;
-	background: -moz- linear-gradient(left, red, blue, #fad7a0);
-	margin-top: 20px;
-	font-weight: 100;
-	text-align: center;
-
-}
-
-.texto-nosotros {
-	width: 100%;
-	display: flex;
-
-}
-
-.bien h1 {
-	width: 100%;
-	height: 80px;
-	margin: auto;
-	margin-top: 30px;
-	font-size: 50px;
-	text-align: center;
-}
-
-.grid-container {
-
+	height: 550px;
+	background-color: #ffffffbb;
+	margin-top: 100px;
 	display: grid;
-	height: 350px;
-	grid-template-columns: auto auto auto;
+	justify-self: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-auto-rows: 200px;
+	padding: 50px;
+	grid-gap: 40px
+}
 
 
+.contenido img {
+	width: 100%;
+	height: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	object-fit: cover;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
 
 }
 
-.grid-container div {
-	margin: 20px;
+.contenido {
+	display: flex;
+	margin: 0;
+	position: relative;
+}
+
+.joyeria{
+	width: 100%;	
+	margin: 0;
+	font-size: 1.5rem;
+	font-family: Montserrat;
+	font-weight: 700;
+	position: absolute;
+	bottom: 0;
+	color: white;
+}
+
+.contenido:nth-child(1) {
+	grid-row-start: span 2;
+}
+
+.contenido:nth-child(3) {
+	grid-row-start: span 2;
+}
+
+footer {
+	width: 100%;
+	background: #202020;
+	color: white;
 
 }
 
-.primero {
-
-	align-content: center;
-
-}
-
-.primero p {
-	font-size: 1em;
-	padding: 20px;
-	color: #977478;
-}
-
-.segundo {
-	grid-area: 1/2/3/4;
-
-}
-
-.tercero {
-	align-content: center;
-
-}
-
-.tercero p {
-	font-size: 1em;
-	margin-top: 10px;
-	padding: 20px;
-	color: #977478;
-}
-
-.inicio {
+.container-footer-all {
+	width: 100%;
+	max-width: 1200px;
 	margin: auto;
-	width: 100px;
-	height: auto;
+	padding: 40px;
+}
+
+.container-footer {
+	display: flex;
+	justify-content: space-between;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.columna1 {
+	width: 33%;
+}
+
+.columna1 h3 {
+	font-size: 22px;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.columna1 p {
+	font-size: 14px;
+	margin-top: 20px;
+	color: #c7c7c7;
+}
+
+.columna2 {
+	width: 33%;
+}
+
+.columna2 h3 {
+	font-size: 22px;
+}
+
+.row {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row img {
+	width: 36px;
+	height: 36px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.columna3 {
+	width: 33%;
+}
+
+.columna3 h1 {
+	font-size: 22px;
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 400;
 	padding: 5px;
-	border: 1px solid #0d0c0c;
-	border-radius: 5px;
-	margin-bottom: 20px;
 }
 
-
-.nosotros .inicio a {
-	margin: 50%;
-	font-size: 1em;
-	margin: auto;
-	text-decoration: none;
-	color: #616363;
+.row2 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
 }
 
-#boton {
-	background: #31384A;
-	color: #fff;
-	padding: 10px;
+.row2 label {
+	font-size: 14px;
+	margin-top: 5px;
+	margin-left: 10px;
+	max-width: 140px;
+	color: #c7c7c7;
 }
 
-#boton:hover {
-	cursor: pointer;
-}
-
-.cadena {
-	height: 75vh;
-	background-image: url(../img/anillo5.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-}
-
-.encabezado {
-	font-family: serif;
-	font-weight: 400px;
-	color: #EF8D37;
-	font-size: 1.2rem;
-}
-
-
-
-
-
-
-
-.pie {
-	margin: auto;
-	background-color: #ffe6ff;
+.container-pie {
 	width: 100%;
-	height: 200px;
-}
-
-table {
-
-	text-align: center;
-	width: 100%;
-}
-
-th,
-td {
+	background: #101010;
+	display: flex;
 	padding: 10px;
-}
-
-.float {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 40px;
-	right: 40px;
-	background-color: #25d366;
-	color: #FFF;
-	border-radius: 50px;
-	text-align: center;
-	font-size: 30px;
-	box-shadow: 2px 2px 3px #999;
-	z-index: 100;
-}
-
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-	background-color: #fff;
-}
-
-.my-float {
-	margin-top: 16px;
+	justify-content: center;
+	color: #c7c7c7;
+	font-family: Montserrat;
+	font-weight: 600;
 }
