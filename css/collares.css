@@ -135,13 +135,14 @@
 
 .cadena {
 	display: flex;
-	height: 100vh;
+	height: 650px;
 	background-image: url(../img/cadena10.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 }
+
 
 .tarjeta-1 {
 	background-color: #d9d9ff;
@@ -152,9 +153,24 @@
 	font-family: serif;
 	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.60);
 
-
 }
 
+.centro {
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 1rem;
+	background-color: #000000;
+	font-family: Montserrat;
+	font-weight: 700;
+}
+
+.centro p {
+	margin-top: 2px
+}
 .tarjeta-1 p {
 	text-align: center;
 	font-family: serif;

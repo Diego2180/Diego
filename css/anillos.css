@@ -47,7 +47,7 @@
 
 .cadena {
 	display: flex;
-	height: 100vh;
+	height: 650px;
 	background-image: url(../img/anillo4.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -143,129 +143,109 @@
 	position: relative;
 }
 
-a .destacado {
+.centro {
 	width: 100%;
-	height: auto;
+	height: 30px;
+	margin: 0;
 	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	margin-bottom: 50px;
-	padding-top: 60px;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 1rem;
+	background-color: #000000;
+	font-family: Montserrat;
+	font-weight: 700;
 }
 
-.tarjeta-1 {
-	background-color: #d9d9ff;
-	width: 30%;
-	height: 350px;
-	padding: 10px;
-	margin: 50px;
-	font-family: serif;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.60);
+.centro p {
+	margin-top: 2px;
+}
+
+.fotos10 {
+	width: 100%;
+	background-color:#e6e6e6;
+	justify-content: center;
+	align-content: center;
+	display: grid;
+	justify-self: center;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 190px;
+	padding: 170px;
 
 }
 
-.tarjeta-1 p {
+.fotos10 h6 {
 	text-align: center;
-	font-family: serif;
+	font-size: 1.6rem;
+	font-family: Montserrat;
+	font-weight: 400;
 }
 
-.tarjeta-1 img {
-	width: 100%;
-	height: 75%;
-	margin: auto;
-	object-fit: cover;
-	justify-content: center;
-}
-
-.tarjeta-2 {
-	background-color: #d9d9ff;
-	width: 30%;
-	height: 350px;
-	padding: 10px;
-	margin: 50px;
-	font-family: serif;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.60)
-}
-
-.tarjeta-2 p {
+.fotos10 p {
 	text-align: center;
-	font-family: serif;
+	font-size: 1rem;
+	font-family: Montserrat;
+	font-weight: 700;
 }
 
-.tarjeta-2 img {
-	width: 100%;
-	height: 75%;
-	margin: auto;
-	object-fit: cover;
-	justify-content: center;
-}
-
-.tarjeta-3 {
-	background-color: #d9d9ff;
-	width: 30%;
-	height: 350px;
-	padding: 10px;
-	margin: 50px;
-	font-family: serif;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.60)
-}
-
-.tarjeta-3 p {
-	text-align: center;
-	font-family: serif;
-}
-
-.tarjeta-3 img {
-	width: 100%;
-	height: 75%;
-
-	object-fit: cover;
-	justify-content: center;
-}
-
-.galeria-container {
-	width: 100%;
-	height: 400px;
-	display: flex;
+.fotos10 {
 	align-items: center;
-	justify-content: center;
-	padding: 20px;
+}
+
+
+.galeria--fotos img {
+	width:100%;
+	height: 100%;
+	margin-top: auto;
+	margin-bottom: auto;
+	object-fit: cover;
 
 }
 
-.galeria--item {
-	width: 50%;
-	height: 400px;
-	display: flex;
-	flex-wrap: wrap;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	justify-content: center;
-	align-items: center;
+.galeria--fotos:nth-child(1) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos:nth-child(2) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos:nth-child(3) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos:nth-child(4) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos:nth-child(5) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos:nth-child(6) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos {
 	position: relative;
 }
 
-
-.galeria--item img {
-	width: 300px;
-	height: 250px;
-	padding: 0px;
-	margin: 5px;
-	border-radius: 5px;
-}
-
-.galeria--titulo {
+.galeria--titulos {
+	width: 100%;
+	margin: 0;
+	font-family: Montserrat;
+	font-weight: 600;
 	position: absolute;
 	bottom: 0;
-	color: #f7f2f2;
-	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0));
-	width: auto;
-	font-family: serif;
-	font-size: 1em;
-	margin: 0;
-	padding: 80px;
+	color: white;
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7))
 }
+
+h3 {
+	padding: 5px;
+	text-align: center;
+	font-size: 15px;
+}
+
 
 
 footer {
@@ -291,31 +271,39 @@ footer {
 
 .columna1 {
 	width: 33%;
+
 }
 
 .columna1 h3 {
-	font-size: 22px;
+	font-size: 16px;
 	font-family: Montserrat;
 	font-weight: 400;
+	text-align: center;
 }
 
 .columna1 p {
-	font-size: 14px;
+	font-size: 12px;
 	margin-top: 20px;
 	color: #c7c7c7;
 }
 
 .columna2 {
 	width: 33%;
+
 }
 
 .columna2 h3 {
-	font-size: 22px;
+	font-size: 16px;
+	font-family: Montserrat;
+	font-weight: 400;
+	text-align: center;
+
 }
 
 .row {
-	margin-top: 20px;
+	margin-top: 12px;
 	display: flex;
+	text-align: center;
 	align-items: center;
 	justify-content: center;
 }
@@ -334,7 +322,7 @@ footer {
 }
 
 .columna3 h1 {
-	font-size: 22px;
+	font-size: 16px;
 	text-align: center;
 	font-family: Montserrat;
 	font-weight: 400;
@@ -342,13 +330,13 @@ footer {
 }
 
 .row2 {
-	margin-top: 20px;
 	display: flex;
+	text-align: center;
 	justify-content: center;
 }
 
 .row2 label {
-	font-size: 14px;
+	font-size: 12px;
 	margin-top: 5px;
 	margin-left: 10px;
 	max-width: 140px;
@@ -357,11 +345,17 @@ footer {
 
 .container-pie {
 	width: 100%;
+	height: 30px;
 	background: #101010;
 	display: flex;
 	padding: 10px;
 	justify-content: center;
+	align-items: center;
 	color: #c7c7c7;
 	font-family: Montserrat;
 	font-weight: 600;
+}
+
+.derechos {
+	font-size: 10px;
 }
