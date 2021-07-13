@@ -46,7 +46,7 @@
 
 }
 
-.carousel-caption h5{
+.carousel-caption h5 {
 	width: 100%;
 	height: 50px;
 	display: flex;
@@ -60,7 +60,7 @@
 	text-shadow: 2px 2px 3px black;
 }
 
-.carousel-caption h3{
+.carousel-caption h3 {
 	width: 50%;
 	height: 30px;
 	display: flex;
@@ -73,7 +73,7 @@
 	text-shadow: 2px 2px 3px black;
 }
 
-.carousel-caption p{
+.carousel-caption p {
 	width: 50%;
 	height: 50px;
 	display: flex;
@@ -103,7 +103,7 @@
 	margin-top: 2px
 }
 
-.todos{
+.todos {
 	position: absolute;
 	font-size: 3rem;
 	font-family: Montserrat, sans-serif;
@@ -113,7 +113,7 @@
 	color: white;
 }
 
-.off{
+.off {
 	position: absolute;
 	font-size: 3rem;
 	font-family: Montserrat, sans-serif;
@@ -123,7 +123,7 @@
 	color: white;
 }
 
-.abonando{
+.abonando {
 	position: absolute;
 	font-size: 3rem;
 	font-family: Montserrat, sans-serif;
@@ -183,7 +183,7 @@
 }
 
 .cadena {
-	display: flex; 
+	display: flex;
 	height: 100vh;
 	background-image: url(../img/anillo5.jpg);
 	background-repeat: no-repeat;
@@ -337,8 +337,8 @@ h3 {
 	position: relative;
 }
 
-.joyeria{
-	width: 100%;	
+.joyeria {
+	width: 100%;
 	margin: 0;
 	font-size: 1.5rem;
 	font-family: Montserrat;
@@ -382,9 +382,10 @@ footer {
 }
 
 .columna1 h3 {
-	font-size: 16px;
+	font-size: 14px;
 	font-family: Montserrat;
 	font-weight: 400;
+	text-align: center;
 }
 
 .columna1 p {
@@ -398,7 +399,8 @@ footer {
 }
 
 .columna2 h3 {
-	font-size: 16px;
+	font-size: 14px;
+	text-align: center;
 }
 
 .row {
@@ -458,6 +460,6 @@ footer {
 	font-weight: 600;
 }
 
-.derechos{
+.derechos {
 	font-size: 10px;
 }
