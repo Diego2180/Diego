@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 * {
 	margin: 0;
@@ -10,12 +10,12 @@
 /* Con typeR declaramos las tipografias ya seleccionadas */
 
 .typeR {
-	font-family: relaway, sans-serif;
+	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 }
 
 .typeRmedium {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .typeRbold {
@@ -41,120 +41,127 @@
 	color: #E0FF00;
 }
 
-body {
+.MV {
 	width: 100%;
-	height: 800px;
+	height: 700px;
 	background-image: url(../img/cadena1.jpg);
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
 }
 
-.centro {
+.navegador{
 	width: 100%;
-	height: 30px;
+	height: 150px;
+}
+.abonando {
+	position: absolute;
+	font-size: 3rem;
+	font-family: Montserrat, sans-serif;
+	font-weight: 400;
 	margin: 0;
-	display: flex;
-	justify-content: center;
-	margin-top: 5px;
-	color: #ffffff;
-	font-size: 1rem;
-	background-color: #000000;
-	font-family: serif;
-}
-
-.cabecera {
-	width: 100%;
-	height: 140px;
-	display: flex;
-	justify-content: center;
-	background-color: #ffe6b3;
-	font-size: 10px;
+	bottom: 0;
+	color: white;
 }
 
 
-.cabecera .logo {
+.navbar-light {
+	background-color: rgba(0, 0, 0, 0.2);
+	position: fixed;
 	width: 100%;
-	height: auto;
+	margin-top: 0;
+	height: 70px;
+	padding: 20px;
+	z-index: 100;
+}
+
+.navbar_titulo {
+	font-size: 35px;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: #fffffe;
+	text-decoration: none !important;
+	transition-duration: 0, 1s;
+}
+
+.a {
+	background-color: transparent;
+}
+
+.navbar-nav {
+	width: 100%;
+	margin-right: 0;
 	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
 	justify-content: flex-end;
 }
 
-.cabecera .logo img {
-	width: 60px;
-	height: 60px;
-	border-radius: 100%;
-
+.dropdown-menu {
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
-.cabecera p {
+.dropdown-item {
+	color: #fffffe;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.navbar-nav .nav_secciones {
+	margin-left: 15px;
+	font-size: 20px;
+	color: white;
+	font-family: Montserrat;
+	font-weight: 600;
+}
+
+.hablanos{
 	width: 100%;
-	height: 50px;
+	height: 80px;
 	display: flex;
-	justify-content: center;
+
+	flex-direction: column;
 	align-items: center;
-	font-size: 1.5rem;
-	font-family: serif;
-	margin-bottom: 15px;
+	justify-content: center;
+
 }
 
-.navbar {
-	width: 100%;
-	height: 30px;
+.hablanos p{
+	font-size: 4rem;
+	color: white;
+	font-family: Montserrat;
+	font-weight: 600;
+	text-shadow: 2px 2px 3px black;
+}
+.formulario{
 	display: flex;
-	background-color: rgb(241, 225, 133);
-
-}
-
-.nav-item {
-
-	font-size: 1.2rem;
-	padding-right: 6rem;
-	padding-left: 6rem;
-	font-family: serif;
-	color: black;
-
-}
-
-.formulario {
+	align-content: center;
 	width: 100%;
-	height: 900px;
-	display: flex;
+	height: 800px;
+	align-content: center;
+	justify-content: flex-start;
 	align-items: center;
 }
 
 form {
 	width: 450px;
-	height: 700px;
+	height: 600px;	
 	margin: auto;
 	margin-bottom: 20px;
-	background: rgb(0, 0, 0, 0.4);
+	background: rgb(0, 0, 0, 0.0);
 	padding: 10px 20px;
 	box-sizing: border-box;
 	margin-top: 15px;
 	border-radius: 5px;
-	/*100vw alto de la ventana y 100 vh ancho de la ventana*/
 }
 
-form h2 {
-	color: #fdfefe;
-	text-align: center;
-	margin: 0;
-	font-size: 30px;
-	margin-bottom: 15px;
 
-}
-
-input,
-textarea {
+input, textarea {
 	width: 100%;
 	margin-bottom: 20px;
 	padding: 7px;
 	box-sizing: border-box;
 	font-size: 17px;
 	border: none;
+	background: white;
+	color: black;
 }
 
 textarea {
@@ -164,8 +171,8 @@ textarea {
 }
 
 #boton {
-	background: #31384A;
-	color: #fff;
+	background: white;
+	color: black;
 	padding: 10px;
 }
 
@@ -173,43 +180,110 @@ textarea {
 	cursor: pointer;
 }
 
-.pie {
-	margin: auto;
-	background-color: #f3e4f5;
-	width: auto;
-}
-
-table {
-	text-align: center;
+footer {
 	width: 100%;
+	background: #202020;
+	color: white;
+
 }
 
-th,
-td {
-	padding: 10px;
+.container-footer-all {
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	padding: 40px;
 }
 
-.float {
-	position: fixed;
-	width: 60px;
-	height: 60px;
-	bottom: 40px;
-	right: 40px;
-	background-color: #25d366;
-	color: #FFF;
-	border-radius: 50px;
+.container-footer {
+	display: flex;
+	justify-content: space-between;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.columna1 {
+	width: 33%;
+}
+
+.columna1 h3 {
+	font-size: 14px;
+	font-family: Montserrat;
+	font-weight: 400;
 	text-align: center;
-	font-size: 30px;
-	box-shadow: 2px 2px 3px #999;
-	z-index: 100;
 }
 
-.float:hover {
-	text-decoration: none;
-	color: #25d366;
-	background-color: #fff;
+.columna1 p {
+	font-size: 12px;
+	margin-top: 20px;
+	color: #c7c7c7;
 }
 
-.my-float {
-	margin-top: 16px;
+.columna2 {
+	width: 33%;
+}
+
+.columna2 h3 {
+	font-size: 14px;
+	text-align: center;
+}
+
+.row {
+	margin-top: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.row img {
+	width: 36px;
+	height: 36px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+	margin: 0;
+}
+
+.columna3 {
+	width: 33%;
+}
+
+.columna3 h1 {
+	font-size: 16px;
+	text-align: center;
+	font-family: Montserrat;
+	font-weight: 400;
+	padding: 5px;
+}
+
+.row2 {
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+}
+
+.row2 label {
+	font-size: 12px;
+	margin-top: 5px;
+	margin-left: 10px;
+	max-width: 140px;
+	color: #c7c7c7;
+	justify-content: center;
+	text-align: center;
+}
+
+.container-pie {
+	width: 100%;
+	height: 30px;
+	background: #101010;
+	display: flex;
+	padding: 10px;
+	justify-content: center;
+	align-items: center;
+	color: #c7c7c7;
+	font-family: Montserrat;
+	font-weight: 600;
+}
+
+.derechos {
+	font-size: 10px;
 }

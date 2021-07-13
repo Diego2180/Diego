@@ -56,7 +56,8 @@
 	color: hsla(0, 0%, 100%, 0.705);
 	font-size: 3rem;
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 600;
+	color: white;
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -70,6 +71,7 @@
 	font-size: 1.3rem;
 	font-family: Montserrat;
 	font-weight: 400;
+	color: white;
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -83,6 +85,7 @@
 	font-size: 1.5rem;
 	font-family: Montserrat;
 	font-weight: 400;
+	color: white;
 	text-shadow: 2px 2px 3px black;
 }
 
@@ -340,12 +343,13 @@ h3 {
 .joyeria {
 	width: 100%;
 	margin: 0;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	font-family: Montserrat;
 	font-weight: 700;
 	position: absolute;
 	bottom: 0;
 	color: white;
+	text-shadow: 2px 2px 3px black;
 }
 
 .contenido:nth-child(1) {

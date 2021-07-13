@@ -124,14 +124,27 @@
 
 }
 
-.cadena {
+.aros {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 650px;
 	background-image: url(../img/aros5.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
+}
+
+.aros h5{
+	align-items: center;
+	position: absolute;
+	font-size: 4rem;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: hsla(0, 0%, 100%, 0.705);
+	color: white;
+	text-shadow: 2px 2px 3px black;
 }
 
 .centro {

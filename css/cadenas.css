@@ -152,8 +152,31 @@
 
 .cadena {
 	display: flex;
-	height: 100vh;
-	background-image: url(../img/cadena1.jpg);
+	justify-content: center;
+	align-items: center;
+	height: 650px;
+	background-image: url(../img/cadena5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.cadena h5{
+	align-items: center;
+	position: absolute;
+	font-size: 4rem;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: hsla(0, 0%, 100%, 0.705);
+	color: white;
+
+	text-shadow: 2px 2px 3px black;
+}
+.cadena {
+	display: flex;
+	height: 650px;
+	background-image: url(../img/cadena5.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;

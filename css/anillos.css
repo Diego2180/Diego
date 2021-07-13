@@ -45,10 +45,10 @@
 	background-color: #e6e6e6;
 }
 
-.cadena {
+.anillo {
 	display: flex;
 	height: 650px;
-	background-image: url(../img/anillo4.jpg);
+	background-image: url(../img/anillo1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -61,26 +61,6 @@
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 	margin-top: 50%;
-	bottom: 0;
-	color: white;
-}
-
-.off {
-	position: absolute;
-	font-size: 3rem;
-	font-family: Montserrat, sans-serif;
-	font-weight: 400;
-	margin: 0;
-	bottom: 0;
-	color: white;
-}
-
-.abonando {
-	position: absolute;
-	font-size: 3rem;
-	font-family: Montserrat, sans-serif;
-	font-weight: 400;
-	margin: 0;
 	bottom: 0;
 	color: white;
 }
@@ -133,16 +113,28 @@
 	font-weight: 600;
 }
 
-.anillos {
+.anillo {
 	display: flex;
-	height: 100vh;
-	background-image: url(../img/anillo4.jpg);
+	justify-content: center;
+	align-items: center;
+	height: 650px;
+	background-image: url(../img/anillo1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 }
 
+.anillo h5{
+	align-items: center;
+	position: absolute;
+	font-size: 4rem;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: hsla(0, 0%, 100%, 0.705);
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
 .centro {
 	width: 100%;
 	height: 30px;
@@ -157,48 +149,59 @@
 }
 
 .centro p {
-	margin-top: 2px;
+	margin-top: 2px
 }
+
+.anillos {
+	display: flex;
+	height: 100vh;
+	background-image: url(../img/anillo4.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+a .destacado {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 50px;
+	padding-top: 60px;
+}
+
 
 .fotos10 {
 	width: 100%;
-	background-color:#e6e6e6;
+	height: 1600px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #ffffffbb;
 	justify-content: center;
-	align-content: center;
 	display: grid;
 	justify-self: center;
 	grid-template-columns: repeat(2, 1fr);
-	grid-auto-rows: 190px;
-	padding: 170px;
-
-}
-
-.fotos10 h6 {
-	text-align: center;
-	font-size: 1.6rem;
-	font-family: Montserrat;
-	font-weight: 400;
-}
-
-.fotos10 p {
-	text-align: center;
-	font-size: 1rem;
-	font-family: Montserrat;
-	font-weight: 700;
+	grid-auto-rows: 200px;
+	padding: 90px;
+	grid-gap: 20px
 }
 
 .fotos10 {
 	align-items: center;
+	
 }
 
 
 .galeria--fotos img {
-	width:100%;
+	width: 100%;
 	height: 100%;
 	margin-top: auto;
 	margin-bottom: auto;
 	object-fit: cover;
-
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
 }
 
 .galeria--fotos:nth-child(1) {
@@ -329,7 +332,7 @@ footer {
 	padding: 5px;
 }
 
-.row2 {
+.row2{
 	display: flex;
 	text-align: center;
 	justify-content: center;
@@ -356,6 +359,6 @@ footer {
 	font-weight: 600;
 }
 
-.derechos {
+.derechos{
 	font-size: 10px;
 }
