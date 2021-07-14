@@ -57,7 +57,7 @@
 	position: relative;
 }
 
-.collares h5{
+.collares h5 {
 	align-items: center;
 	position: absolute;
 	font-size: 4rem;
@@ -117,6 +117,10 @@
 	transition-duration: 0, 1s;
 }
 
+.navbar_titulo:hover {
+	color: white;
+}
+
 .a {
 	background-color: transparent;
 }
@@ -135,7 +139,8 @@
 .dropdown-item {
 	color: #fffffe;
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 600;
+	z-index: 100;
 }
 
 .navbar-nav .nav_secciones {
@@ -184,6 +189,7 @@
 .centro p {
 	margin-top: 2px
 }
+
 .tarjeta-1 p {
 	text-align: center;
 	font-family: serif;

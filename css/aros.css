@@ -94,6 +94,10 @@
 	transition-duration: 0, 1s;
 }
 
+.navbar_titulo:hover{
+	color: white;
+}
+
 .a {
 	background-color: transparent;
 }
@@ -112,7 +116,8 @@
 .dropdown-item {
 	color: #fffffe;
 	font-family: Montserrat;
-	font-weight: 400;
+	font-weight: 600;
+	z-index: 100;
 }
 
 .navbar-nav .nav_secciones {
