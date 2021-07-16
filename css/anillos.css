@@ -47,7 +47,7 @@
 
 .anillo {
 	display: flex;
-	height: 650px;
+	height: 100vh;
 	background-image: url(../img/anillo1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -55,18 +55,8 @@
 	position: relative;
 }
 
-.todos {
-	position: absolute;
-	font-size: 3rem;
-	font-family: Montserrat, sans-serif;
-	font-weight: 400;
-	margin-top: 50%;
-	bottom: 0;
-	color: white;
-}
-
 .navbar-light {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
 	position: fixed;
 	width: 100%;
 	margin-top: 0;
@@ -100,7 +90,7 @@
 }
 
 .dropdown-menu {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
 }
 
 .dropdown-item {
@@ -181,33 +171,48 @@ a .destacado {
 
 
 .fotos10 {
-	width: 100%;
-	height: 1600px;
+	width: 85%;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #ffffffbb;
+	background-color: #e6e6e6;
 	justify-content: center;
+	align-content: center;
 	display: grid;
 	justify-self: center;
 	grid-template-columns: repeat(2, 1fr);
-	grid-auto-rows: 200px;
-	padding: 90px;
-	grid-gap: 20px
+	grid-auto-rows: 175px;
+	padding: 170px;
+
+}
+
+.fotos10 h6 {
+	text-align: center;
+	font-size: 1.2rem;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.fotos10 p {
+	text-align: center;
+	font-size: 1rem;
+	font-family: Montserrat;
+	font-weight: 700;
 }
 
 .fotos10 {
 	align-items: center;
-
 }
 
 
 .galeria--fotos img {
+	display: flex;
 	width: 100%;
-	height: 100%;
-	margin-top: auto;
+	height: 350px;
+	margin-top: 10px;
 	margin-bottom: auto;
-	object-fit: cover;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
+
+
+
 }
 
 .galeria--fotos:nth-child(1) {
@@ -254,7 +259,6 @@ h3 {
 	text-align: center;
 	font-size: 15px;
 }
-
 
 
 footer {

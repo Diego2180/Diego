@@ -7,8 +7,6 @@
 
 }
 
-/* Con typeR declaramos las tipografias ya seleccionadas */
-
 .typeR {
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
@@ -22,7 +20,6 @@
 	font-weight: 700;
 }
 
-/* Con estas clases podemos declarar colores para luego utilizarlos. Ejemplo bgColorBlack (background-color) bgColorBlack. Sirve si ya tenemos los colores definidos que vamos a utilizar en nuestro sitio. "Aca no esta aplicado"*/
 
 .bgColorBlack {
 	background-color: #121212;
@@ -45,65 +42,22 @@
 	background-color: #e6e6e6;
 }
 
+
 .cadena {
 	display: flex;
-	height: 650px;
-	background-image: url(../img/anillo4.jpg);
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/cadena5.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 }
 
-.centro {
-	width: 100%;
-	height: 30px;
-	margin: 0;
-	display: flex;
-	justify-content: center;
-	color: #ffffff;
-	font-size: 1rem;
-	background-color: #000000;
-	font-family: Montserrat;
-	font-weight: 700;
-}
-
-.centro p {
-	margin-top: 2px
-}
-
-.todos {
-	position: absolute;
-	font-size: 3rem;
-	font-family: Montserrat, sans-serif;
-	font-weight: 400;
-	margin-top: 50%;
-	bottom: 0;
-	color: white;
-}
-
-.off {
-	position: absolute;
-	font-size: 3rem;
-	font-family: Montserrat, sans-serif;
-	font-weight: 400;
-	margin: 0;
-	bottom: 0;
-	color: white;
-}
-
-.abonando {
-	position: absolute;
-	font-size: 3rem;
-	font-family: Montserrat, sans-serif;
-	font-weight: 400;
-	margin: 0;
-	bottom: 0;
-	color: white;
-}
-
 .navbar-light {
-	background-color: rgba(0, 0, 0, 0.2);
+	display: flex;
+	background-color: rgba(0, 0, 0, 0.4);
 	position: fixed;
 	width: 100%;
 	margin-top: 0;
@@ -112,7 +66,17 @@
 	z-index: 100;
 }
 
+@media all and (max-width: 576px){
+
+	.navbar-light{		
+		height: 70px;	
+
+	}
+
+}
+
 .navbar_titulo {
+	display: flex;	
 	font-size: 35px;
 	font-family: Montserrat;
 	font-weight: 600;
@@ -124,6 +88,17 @@
 .navbar_titulo:hover{
 	color: white;
 }
+
+@media all and (max-width: 576px){
+
+	.navbar_titulo{
+		font-size: 25px;
+		justify-content: center;
+		align-content: center;
+		text-align: center;	
+	}
+}
+
 
 .a {
 	background-color: transparent;
@@ -137,8 +112,9 @@
 }
 
 .dropdown-menu {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
 }
+
 
 .dropdown-item {
 	color: #fffffe;
@@ -146,6 +122,7 @@
 	font-weight: 600;
 	z-index: 100;
 }
+
 
 .navbar-nav .nav_secciones {
 	margin-left: 15px;
@@ -155,17 +132,27 @@
 	font-weight: 600;
 }
 
-.cadena {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 650px;
-	background-image: url(../img/cadena5.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
+@media all and (max-width: 576px){
+
+	.navbar-nav .nav_secciones{
+		font-size: 15px;
+	}
 }
+
+@media all and (max-width: 576px){
+
+	.cadena{
+		background-image: url(../img/cadena10.jpg);
+		background-color: #ebd113 ;
+		display: flex;
+		max-width: 100%;
+		max-height: 350px;
+	
+	}
+
+}
+
+
 
 .cadena h5{
 	align-items: center;
@@ -175,37 +162,87 @@
 	font-weight: 600;
 	color: hsla(0, 0%, 100%, 0.705);
 	color: white;
-
 	text-shadow: 2px 2px 3px black;
 }
-.cadena {
-	display: flex;
-	height: 650px;
-	background-image: url(../img/cadena5.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
+
+@media all and (max-width: 576px){
+
+	.cadena h5{
+				font-size: 2rem;
+	
+	}
+
 }
+
+
+
+
+.centro {
+	width: 100%;
+	height: 30px;
+	margin: 0;
+	display: flex;
+	justify-content: center;
+	color: #ffffff;
+	font-size: 1rem;
+	background-color: #000000;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+@media all and (max-width: 576px){					
+		.centro {
+				height: 15px;
+			}
+
+}
+.centro p {
+	margin-top: 2px
+}
+
+@media all and (max-width: 576px){
+
+		.centro p{
+				font-size: 9px;
+				
+			}
+
+}
+
 
 .c-pulceras {
 	display: flex;
 	width: 100%;
-	height: 750px;
-	padding: 3% 2%;
+	height: 550px;
+	padding: 3% 1%;
 	box-sizing: border-box;
 	margin-top: 40px;
+	margin-bottom: 40px;
 	align-items: center;
 }
 
+@media all and (max-width: 576px){
+
+		.c-pulceras{
+				margin-left: auto;
+				margin-right: auto;
+				justify-content: center;
+				flex-direction: column;
+				width: 55%;
+				height: 1900px;
+				margin-top: 50px;				
+			}
+}
+
+
 .box {
 	width: 100%;
-	height: 570px;
+	height: 450px;
 	flex: 1;
 	background-color: #d9d9ff;
 	overflow: hidden;
 	margin: 3px;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.40);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
 	line-height: 0;
 	transition: all 900ms;
 }
@@ -214,6 +251,17 @@
 	flex: 30%;
 }
 
+@media all and (max-width: 576px){
+
+		.box{
+				width: 100%;
+				height: 850px;
+				flex: 1;
+				background-color: white;
+				overflow: hidden;
+				margin:30px;	
+			}
+}
 
 .box img {
 	width: 100%;
@@ -221,6 +269,15 @@
 	object-fit: cover;
 	transition: all 900ms;
 }
+
+@media all and (max-width: 576px){
+
+		.box img{
+				height: 90% ;
+			}
+}
+	
+
 
 .box:hover img {
 	width: 90%;

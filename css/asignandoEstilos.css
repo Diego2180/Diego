@@ -43,7 +43,16 @@
 
 .MV {
 	background-color: #e6e6e6;
+}
 
+.cadena {
+	display: flex;
+	height: 100vh;
+	background-image: url(../img/anillo5.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	position: relative;
 }
 
 .carousel-caption h5 {
@@ -190,16 +199,6 @@
 	font-family: Montserrat;
 	font-weight: 600;
 
-}
-
-.cadena {
-	display: flex;
-	height: 100vh;
-	background-image: url(../img/anillo5.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
 }
 
 .categorias {
