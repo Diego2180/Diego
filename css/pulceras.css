@@ -45,7 +45,7 @@
 
 .cadena {
 	display: flex;
-	height: 100vh;
+	height: 750px;
 	justify-content: center;
 	align-items: center;
 	background-image: url(../img/cadena5.jpg);
@@ -209,93 +209,98 @@
 
 }
 
+.fotos10 {
+	width: 85%;
+	background-color: #e6e6e6;
+	display: grid;
+	justify-self: center;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 175px;
+	padding: 170px;
+	margin-left: auto;
+	margin-right: auto;
 
-.c-pulceras {
-	display: flex;
-	width: 100%;
-	height: 550px;
-	padding: 3% 1%;
-	box-sizing: border-box;
-	margin-top: 40px;
-	margin-bottom: 40px;
+}
+
+.fotos10 h6 {
+	text-align: center;
+	font-size: 1.2rem;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+.fotos10 p {
+	text-align: center;
+	font-size: 1rem;
+	font-family: Montserrat;
+	font-weight: 700;
+}
+
+.fotos10 {
 	align-items: center;
 }
 
-@media all and (max-width: 576px){
 
-		.c-pulceras{
-				margin-left: auto;
-				margin-right: auto;
-				justify-content: center;
-				flex-direction: column;
-				width: 55%;
-				height: 1900px;
-				margin-top: 50px;				
-			}
-}
-
-
-.box {
+.galeria--fotos img {
+	display: flex;
 	width: 100%;
-	height: 450px;
-	flex: 1;
-	background-color: #d9d9ff;
-	overflow: hidden;
-	margin: 3px;
-	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.15);
-	line-height: 0;
-	transition: all 900ms;
+	height: 350px;
+	margin-top: 10px;
+	margin-bottom: auto;
+
+
+
 }
 
-.box:hover {
-	flex: 30%;
+.galeria--fotos:nth-child(1) {
+	grid-row-start: span 2;
 }
 
-@media all and (max-width: 576px){
-
-		.box{
-				width: 100%;
-				height: 850px;
-				flex: 1;
-				background-color: white;
-				overflow: hidden;
-				margin:30px;	
-			}
+.galeria--fotos:nth-child(2) {
+	grid-row-start: span 2;
 }
 
-.box img {
+.galeria--fotos:nth-child(3) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos:nth-child(4) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos:nth-child(5) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos:nth-child(6) {
+	grid-row-start: span 2;
+}
+
+.galeria--fotos {
+	position: relative;
+}
+
+.galeria--titulos {
 	width: 100%;
-	height: calc(90% - 5vh);
-	object-fit: cover;
-	transition: all 900ms;
+	margin: 0;
+	font-family: Montserrat;
+	font-weight: 600;
+	position: absolute;
+	bottom: 0;
+	color: white;
+	background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.7))
 }
 
-@media all and (max-width: 576px){
-
-		.box img{
-				height: 90% ;
-			}
-}
-	
-
-
-.box:hover img {
-	width: 90%;
-	height: 95%;
-
-}
-
-.box span {
-	font-size: 1.2rem;
-	font-family: serif;
-	display: block;
+h3 {
+	padding: 5px;
 	text-align: center;
-	height: 10vh;
-	line-height: 40px;
+	font-size: 15px;
 }
+
 
 footer {
 	width: 100%;
+	height: auto;
 	background: #202020;
 	color: white;
 
@@ -305,7 +310,7 @@ footer {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	padding: 40px;
+	padding: 20px;
 }
 
 .container-footer {
@@ -317,10 +322,11 @@ footer {
 
 .columna1 {
 	width: 33%;
+
 }
 
 .columna1 h3 {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: Montserrat;
 	font-weight: 400;
 	text-align: center;
@@ -334,16 +340,21 @@ footer {
 
 .columna2 {
 	width: 33%;
+
 }
 
 .columna2 h3 {
-	font-size: 14px;
+	font-size: 16px;
+	font-family: Montserrat;
+	font-weight: 400;
 	text-align: center;
+
 }
 
 .row {
 	margin-top: 12px;
 	display: flex;
+	text-align: center;
 	align-items: center;
 	justify-content: center;
 }
@@ -370,8 +381,8 @@ footer {
 }
 
 .row2 {
-	margin-top: 20px;
 	display: flex;
+	text-align: center;
 	justify-content: center;
 }
 
@@ -381,8 +392,6 @@ footer {
 	margin-left: 10px;
 	max-width: 140px;
 	color: #c7c7c7;
-	justify-content: center;
-	text-align: center;
 }
 
 .container-pie {

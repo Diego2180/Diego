@@ -47,13 +47,14 @@
 
 .cadena {
 	display: flex;
-	height: 100vh;
+	height: 650px;
 	background-image: url(../img/anillo5.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
 }
+
 
 .carousel-caption h5 {
 	width: 100%;
@@ -111,6 +112,16 @@
 	font-weight: 700;
 }
 
+@media all and (max-width: 411px) {
+
+	.centro {
+		width: 100%;
+		height: 18px;
+		font-weight: 400;
+		font-size: 9px;
+	}
+}
+
 .centro p {
 	margin-top: 2px
 }
@@ -127,12 +138,13 @@
 
 .off {
 	position: absolute;
-	font-size: 3rem;
+	font-size: 20px;
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 	margin: 0;
 	bottom: 0;
 	color: white;
+
 }
 
 .abonando {
@@ -145,8 +157,9 @@
 	color: white;
 }
 
+
 .navbar-light {
-	background-color: rgba(0, 0, 0, 0.3);
+	background-color: rgba(0, 0, 0, 0.4);
 	position: fixed;
 	width: 100%;
 	margin-top: 0;
@@ -156,12 +169,22 @@
 }
 
 .navbar_titulo {
+	text-align:center;
 	font-size: 35px;
 	font-family: Montserrat;
 	font-weight: 600;
 	color: #fffffe;
 	text-decoration: none !important;
-	transition-duration: 0, 1s;
+}
+
+@media all and (max-width: 411px) {
+
+	.navbar_titulo {
+		font-size: 20px;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
 }
 
 .navbar_titulo:hover {
@@ -180,17 +203,48 @@
 }
 
 .dropdown-menu {
-	background-color: rgba(0, 0, 0, 0.3);
-	
+	display: flex;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.5);
+}
 
+@media all and (max-width: 411px) {
+	.dropdown-menu {
+		background-color: rgba(0, 0, 0, 0.5);
+
+	}
 }
 
 .dropdown-item {
-	color: #fffffe;
+	color: #edeeea;
 	font-family: Montserrat;
 	font-weight: 600;
 	z-index: 100;
 }
+
+@media all and (max-width: 411px) {
+	.dropdown-item {
+		color: #edeeea;
+		font-family: Montserrat;
+		font-weight: 700;
+		text-shadow: #000000;
+		z-index: 100;
+	}
+}
+
+
+@media all and (max-width: 411px) {
+
+	.navbar-toggler {
+		width: 40px;
+		height: 40px;
+		background-color: white;
+		margin-right: 5px;
+
+	}
+}
+
+
 
 .navbar-nav .nav_secciones {
 	margin-left: 15px;
@@ -199,6 +253,17 @@
 	font-family: Montserrat;
 	font-weight: 600;
 
+}
+
+@media all and (max-width: 411px) {
+
+	.navbar-nav .nav_secciones {
+		margin-left: 30px;
+		font-size: 12px;
+		color: white;
+		font-family: Montserrat;
+		font-weight: 600;
+	}
 }
 
 .categorias {
@@ -212,10 +277,26 @@
 	align-items: center;
 }
 
+@media all and (max-width: 411px) {
+
+	.categorias {
+		width: 50%;
+		height: 100px;
+		margin-top: 20px;
+	}
+}
+
 .categorias .tendencias {
 	font-size: 2rem;
 	font-family: Montserrat;
 	font-weight: 400;
+}
+
+@media all and (max-width: 411px) {
+
+	.categorias .tendencias {
+		font-size: 1rem;
+	}
 }
 
 .fotos10 {
@@ -225,6 +306,7 @@
 	margin-right: auto;
 	background-color: #ffffffbb;
 	justify-content: center;
+	display: flex;
 	display: grid;
 	justify-self: center;
 	grid-template-columns: repeat(4, 1fr);
@@ -233,21 +315,37 @@
 	grid-gap: 20px
 }
 
+@media all and (max-width: 411px) {
+
+	.fotos10 {
+		width: 100%;
+		height: 100%;
+		grid-template-columns: repeat(3, 1fr);
+		padding: 10px;
+		grid-gap: 10px
+	}
+
+}
+
 .galeria--fotos img {
 	width: 100%;
 	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	margin-top: auto;
 	margin-bottom: auto;
 	object-fit: cover;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
 }
 
-.galeria--fotos:nth-child(4) {
-	grid-row-start: span 2;
+.galeria--fotos:nth-child(2) {
+	grid-row-start: span 1;
 }
 
+
 .galeria--fotos:nth-child(2) {
-	grid-column-start: span 2;
+	grid-column-start: span 3;
 }
 
 .galeria--fotos:nth-child(3) {
@@ -260,6 +358,32 @@
 
 .galeria--fotos {
 	position: relative;
+}
+
+@media all and (max-width: 411px) {
+
+	.galeria--fotos img {
+		width: 100%;
+		height: 100%;
+		flex-direction: column;
+	}
+
+	.galeria--fotos:nth-child(6) {
+		grid-column-start: span 2;
+	}
+
+	.galeria--fotos:nth-child(3) {
+		grid-column-start: span 2;
+	}
+
+	.galeria--fotos:nth-child(2) {
+		grid-column-start: span 2;
+	}
+
+	.galeria--fotos:nth-child(4) {
+		grid-row-start: span 2;
+	}
+
 }
 
 .galeria--titulos {
@@ -280,13 +404,28 @@ h3 {
 
 }
 
+@media all and (max-width: 411px) {
+
+	h3 {
+		font-size: 10px;
+	}
+}
+
+
+
 .logo2 {
 	width: 100%;
 	height: 250px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
 
+@media all and (max-width: 411px) {
+
+	.logo2 {
+		height: 150px;
+	}
 }
 
 .logo2 img {
@@ -298,6 +437,14 @@ h3 {
 	padding: 0.25em 0.25em;
 	transition: all 0.5s ease;
 
+}
+
+@media all and (max-width: 411px) {
+
+	.logo2 img {
+		width: 80px;
+		height: 80px;
+	}
 }
 
 .descubrimas {
@@ -312,8 +459,15 @@ h3 {
 	font-family: Montserrat;
 	font-weight: 400;
 	text-align: center;
+}
 
+@media all and (max-width: 411px) {
 
+	.descubrimas {
+		width: 45%;
+		height: 50px;
+		font-size: 1rem;
+	}
 }
 
 .contenedor {
@@ -321,6 +475,7 @@ h3 {
 	height: 550px;
 	background-color: #ffffffbb;
 	margin-top: 100px;
+	display: flex;
 	display: grid;
 	justify-self: center;
 	grid-template-columns: repeat(3, 1fr);
@@ -329,6 +484,21 @@ h3 {
 	grid-gap: 40px
 }
 
+@media all and (max-width: 411px) {
+
+	.contenedor {
+		width: 100%;
+		height: 100%;
+		margin-top: 100px;
+		display: flex;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: 100px;
+		padding: 50px;
+		grid-gap: 20px
+	}
+
+}
 
 .contenido img {
 	width: 100%;
@@ -336,8 +506,15 @@ h3 {
 	margin-top: auto;
 	margin-bottom: auto;
 	object-fit: cover;
-	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.30);
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.40)
+}
 
+@media all and (max-width: 411px) {
+
+	.contenido img {
+		width: 100%;
+		height: 100%;
+	}
 }
 
 .contenido {
@@ -358,6 +535,15 @@ h3 {
 	text-shadow: 2px 2px 3px black;
 }
 
+@media all and (max-width: 411px) {
+
+	.joyeria {
+		font-size: 0.8em;
+		font-weight: 600;
+	}
+}
+
+
 .contenido:nth-child(1) {
 	grid-row-start: span 2;
 }
@@ -366,18 +552,36 @@ h3 {
 	grid-row-start: span 2;
 }
 
+
 footer {
 	width: 100%;
+	height: auto;
 	background: #202020;
 	color: white;
 
+}
+
+
+@media all and (max-width: 411px) {
+
+	footer {
+		width: 100%;
+		height: auto;
+	}
 }
 
 .container-footer-all {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	padding: 40px;
+	padding: 20px;
+}
+
+@media all and (max-width: 411px) {
+
+	.container-footer-all {
+		padding: 5px;
+	}
 }
 
 .container-footer {
@@ -389,13 +593,22 @@ footer {
 
 .columna1 {
 	width: 33%;
+
 }
 
 .columna1 h3 {
-	font-size: 14px;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
 	font-family: Montserrat;
 	font-weight: 400;
-	text-align: center;
+}
+
+@media all and (max-width: 411px) {
+
+	.columna1 h3 {
+		font-size: 12px;
+	}
 }
 
 .columna1 p {
@@ -404,18 +617,40 @@ footer {
 	color: #c7c7c7;
 }
 
+@media all and (max-width: 411px) {
+
+	.columna1 p {
+		justify-content: center;
+		text-align: center;
+		font-size: 9px;
+
+	}
+}
+
 .columna2 {
 	width: 33%;
+
 }
 
 .columna2 h3 {
-	font-size: 14px;
-	text-align: center;
+	display: flex;
+	justify-content: center;
+	font-size: 16px;
+	font-family: Montserrat;
+	font-weight: 400;
+}
+
+@media all and (max-width: 411px) {
+
+	.columna2 h3 {
+		font-size: 12px;
+	}
 }
 
 .row {
 	margin-top: 12px;
 	display: flex;
+	text-align: center;
 	align-items: center;
 	justify-content: center;
 }
@@ -429,22 +664,38 @@ footer {
 	margin: 0;
 }
 
+@media all and (max-width: 411px) {
+
+	.row img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
 .columna3 {
 	width: 33%;
 }
 
 .columna3 h1 {
+	display: flex;
+	justify-content: center;
 	font-size: 16px;
-	text-align: center;
 	font-family: Montserrat;
 	font-weight: 400;
 	padding: 5px;
 }
 
+@media all and (max-width: 411px) {
+
+	.columna3 h1 {
+		font-size: 12px;
+	}
+}
+
 .row2 {
-	margin-top: 20px;
 	display: flex;
 	justify-content: center;
+	text-align: center;
 }
 
 .row2 label {
@@ -453,8 +704,14 @@ footer {
 	margin-left: 10px;
 	max-width: 140px;
 	color: #c7c7c7;
-	justify-content: center;
-	text-align: center;
+}
+
+@media all and (max-width: 411px) {
+
+	.row2 label {
+		font-size: 9px;
+
+	}
 }
 
 .container-pie {
@@ -470,6 +727,21 @@ footer {
 	font-weight: 600;
 }
 
+@media all and (max-width: 411px) {
+
+	.container-pie {
+		height: 20px;
+		padding: 5px;
+	}
+}
+
 .derechos {
 	font-size: 10px;
+}
+
+@media all and (max-width: 411px) {
+
+	.derechos {
+		font-size: 8px;
+	}
 }

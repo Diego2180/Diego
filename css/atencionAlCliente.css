@@ -65,7 +65,7 @@
 
 
 .navbar-light {
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.4);
 	position: fixed;
 	width: 100%;
 	margin-top: 0;
@@ -186,6 +186,7 @@ textarea {
 
 footer {
 	width: 100%;
+	height: auto;
 	background: #202020;
 	color: white;
 
@@ -195,7 +196,7 @@ footer {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	padding: 40px;
+	padding: 20px;
 }
 
 .container-footer {
@@ -207,10 +208,11 @@ footer {
 
 .columna1 {
 	width: 33%;
+
 }
 
 .columna1 h3 {
-	font-size: 14px;
+	font-size: 16px;
 	font-family: Montserrat;
 	font-weight: 400;
 	text-align: center;
@@ -224,16 +226,21 @@ footer {
 
 .columna2 {
 	width: 33%;
+
 }
 
 .columna2 h3 {
-	font-size: 14px;
+	font-size: 16px;
+	font-family: Montserrat;
+	font-weight: 400;
 	text-align: center;
+
 }
 
 .row {
 	margin-top: 12px;
 	display: flex;
+	text-align: center;
 	align-items: center;
 	justify-content: center;
 }
@@ -260,8 +267,8 @@ footer {
 }
 
 .row2 {
-	margin-top: 20px;
 	display: flex;
+	text-align: center;
 	justify-content: center;
 }
 
@@ -271,8 +278,6 @@ footer {
 	margin-left: 10px;
 	max-width: 140px;
 	color: #c7c7c7;
-	justify-content: center;
-	text-align: center;
 }
 
 .container-pie {

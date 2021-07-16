@@ -47,7 +47,7 @@
 
 .anillo {
 	display: flex;
-	height: 100vh;
+	height: 650px;
 	background-image: url(../img/anillo1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -263,6 +263,7 @@ h3 {
 
 footer {
 	width: 100%;
+	height: auto;
 	background: #202020;
 	color: white;
 
@@ -272,7 +273,7 @@ footer {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	padding: 40px;
+	padding: 20px;
 }
 
 .container-footer {
