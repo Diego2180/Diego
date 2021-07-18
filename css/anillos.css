@@ -4,16 +4,12 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
-
-/* Con typeR declaramos las tipografias ya seleccionadas */
 
 .typeR {
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
 }
-
 .typeRmedium {
 	font-weight: 600;
 }
@@ -21,8 +17,6 @@
 .typeRbold {
 	font-weight: 700;
 }
-
-/* Con estas clases podemos declarar colores para luego utilizarlos. Ejemplo bgColorBlack (background-color) bgColorBlack. Sirve si ya tenemos los colores definidos que vamos a utilizar en nuestro sitio. "Aca no esta aplicado"*/
 
 .bgColorBlack {
 	background-color: #121212;
@@ -47,12 +41,20 @@
 
 .anillo {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	height: 650px;
 	background-image: url(../img/anillo1.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	position: relative;
+}
+
+@media all and (max-width: 411px) {
+	.anillo {
+		height: 250px;
+	}
 }
 
 .navbar-light {
@@ -72,6 +74,16 @@
 	color: #fffffe;
 	text-decoration: none !important;
 	transition-duration: 0, 1s;
+}
+
+@media all and (max-width: 411px) {
+
+	.navbar_titulo {
+		font-size: 20px;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
 }
 
 .navbar_titulo:hover {
@@ -108,16 +120,15 @@
 	font-weight: 600;
 }
 
-.anillo {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 650px;
-	background-image: url(../img/anillo1.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
+@media all and (max-width: 411px) {
+
+	.navbar-nav .nav_secciones {
+		margin-left: 30px;
+		font-size: 12px;
+		color: white;
+		font-family: Montserrat;
+		font-weight: 600;
+	}
 }
 
 .anillo h5 {
@@ -129,6 +140,12 @@
 	color: hsla(0, 0%, 100%, 0.705);
 	color: white;
 	text-shadow: 2px 2px 3px black;
+}
+
+@media all and (max-width: 411px) {
+	.anillo h5 {
+		font-size: 2rem;
+	}
 }
 
 .centro {
@@ -144,18 +161,17 @@
 	font-weight: 700;
 }
 
-.centro p {
-	margin-top: 2px
+@media all and (max-width: 411px) {
+	.centro {
+		width: 100%;
+		height: 18px;
+		font-weight: 400;
+		font-size: 8px;
+	}
 }
 
-.anillos {
-	display: flex;
-	height: 100vh;
-	background-image: url(../img/anillo4.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
-	position: relative;
+.centro p {
+	margin-top: 2px
 }
 
 a .destacado {
@@ -177,12 +193,23 @@ a .destacado {
 	background-color: #e6e6e6;
 	justify-content: center;
 	align-content: center;
+	display: flex;
 	display: grid;
 	justify-self: center;
 	grid-template-columns: repeat(2, 1fr);
 	grid-auto-rows: 175px;
 	padding: 170px;
 
+}
+
+@media all and (max-width: 411px) {
+
+	.fotos10 {
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+		grid-auto-rows: 100px;
+		padding: 100px;
+	}
 }
 
 .fotos10 h6 {
@@ -192,6 +219,12 @@ a .destacado {
 	font-weight: 400;
 }
 
+@media all and (max-width: 411px) {
+	.fotos10 h6 {
+		font-size: 12px;
+	}
+}
+
 .fotos10 p {
 	text-align: center;
 	font-size: 1rem;
@@ -199,20 +232,29 @@ a .destacado {
 	font-weight: 700;
 }
 
+@media all and (max-width: 411px) {
+	.fotos10 p {
+		font-size: 9px;
+	}
+}
+
 .fotos10 {
 	align-items: center;
 }
 
-
 .galeria--fotos img {
-	display: flex;
 	width: 100%;
 	height: 350px;
 	margin-top: 10px;
 	margin-bottom: auto;
+}
 
+@media all and (max-width: 411px) {
 
-
+	.galeria--fotos img {
+		width: 200px;
+		height: 200px;
+	}
 }
 
 .galeria--fotos:nth-child(1) {
@@ -260,7 +302,6 @@ h3 {
 	font-size: 15px;
 }
 
-
 footer {
 	width: 100%;
 	height: auto;
@@ -273,11 +314,33 @@ footer {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	padding: 20px;
+	padding: 18px;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.container-footer-all {
+		padding: 5px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.container-footer-all {
+		padding: 10px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.container-footer-all {
+		padding: 15px;
+	}
 }
 
 .container-footer {
 	display: flex;
+	text-align: center;
 	justify-content: space-between;
 	font-family: Montserrat;
 	font-weight: 400;
@@ -289,29 +352,95 @@ footer {
 }
 
 .columna1 h3 {
+	display: flex;
+	justify-content: center;
+	text-align: center;
 	font-size: 16px;
 	font-family: Montserrat;
 	font-weight: 400;
-	text-align: center;
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.columna1 h3 {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.columna1 h3 {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.columna1 h3 {
+		font-size: 16px;
+	}
+}
 .columna1 p {
 	font-size: 12px;
-	margin-top: 20px;
+	margin-top: 10px;
 	color: #c7c7c7;
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.columna1 p {
+		font-size: 9px;
+
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.columna1 p {
+		font-size: 12px;
+
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.columna1 p {
+		font-size: 16px;
+
+	}
+}
 .columna2 {
 	width: 33%;
 
 }
 
 .columna2 h3 {
+	display: flex;
+	justify-content: center;
 	font-size: 16px;
 	font-family: Montserrat;
 	font-weight: 400;
-	text-align: center;
+}
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.columna2 h3 {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.columna2 h3 {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.columna2 h3 {
+		font-size: 16px;
+	}
 }
 
 .row {
@@ -323,12 +452,36 @@ footer {
 }
 
 .row img {
-	width: 36px;
-	height: 36px;
+	width: 34px;
+	height: 34px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
 	margin: 0;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.row img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.row img {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.row img {
+		width: 30px;
+		height: 30px;
+	}
 }
 
 .columna3 {
@@ -336,17 +489,40 @@ footer {
 }
 
 .columna3 h1 {
+	display: flex;
+	justify-content: center;
 	font-size: 16px;
-	text-align: center;
 	font-family: Montserrat;
 	font-weight: 400;
 	padding: 5px;
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.columna3 h1 {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.columna3 h1 {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.columna3 h1 {
+		font-size: 16px;
+	}
+}
+
+
 .row2 {
 	display: flex;
-	text-align: center;
 	justify-content: center;
+	text-align: center;
 }
 
 .row2 label {
@@ -355,6 +531,27 @@ footer {
 	margin-left: 10px;
 	max-width: 140px;
 	color: #c7c7c7;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.row2 label{
+		font-size: 9px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.row2 label {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.row2 label {
+		font-size: 12px;
+	}
 }
 
 .container-pie {
@@ -370,6 +567,53 @@ footer {
 	font-weight: 600;
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.container-pie {
+		height: 15px;
+		padding: 5px;
+	}
+}
+
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.container-pie {
+		height: 18px;
+		padding: 5px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.container-pie {
+		height: 16px;
+		padding: 5px;
+	}
+}
+
 .derechos {
-	font-size: 10px;
+	font-size: 12px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.derechos {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.derechos {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.derechos {
+		font-size: 11px;
+	}
 }

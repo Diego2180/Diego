@@ -7,8 +7,6 @@
 
 }
 
-/* Con typeR declaramos las tipografias ya seleccionadas */
-
 .typeR {
 	font-family: Montserrat, sans-serif;
 	font-weight: 400;
@@ -21,8 +19,6 @@
 .typeRbold {
 	font-weight: 700;
 }
-
-/* Con estas clases podemos declarar colores para luego utilizarlos. Ejemplo bgColorBlack (background-color) bgColorBlack. Sirve si ya tenemos los colores definidos que vamos a utilizar en nuestro sitio. "Aca no esta aplicado"*/
 
 .bgColorBlack {
 	background-color: #121212;
@@ -44,15 +40,25 @@
 .MV {
 	width: 100%;
 	height: 700px;
-	background-image: url(../img/cadena1.jpg);
+	background-image: url(../img/anillo1.jpg);
 	background-size: 100vw 100vh;
 	background-attachment: fixed;
 }
 
-.navegador{
+@media all and (max-width: 411px) {
+	.MV {
+		width: 100%;
+		height: 900px;
+		background-size: 100vw 100vh;
+		background-attachment: fixed;
+	}
+}
+
+.navegador {
 	width: 100%;
 	height: 150px;
 }
+
 .abonando {
 	position: absolute;
 	font-size: 3rem;
@@ -83,7 +89,17 @@
 	transition-duration: 0, 1s;
 }
 
-.navbar_titulo:hover{
+@media all and (max-width: 411px) {
+
+	.navbar_titulo {
+		font-size: 20px;
+		justify-content: center;
+		align-content: center;
+		text-align: center;
+	}
+}
+
+.navbar_titulo:hover {
 	color: white;
 }
 
@@ -116,25 +132,42 @@
 	font-weight: 600;
 }
 
-.hablanos{
+@media all and (max-width: 411px) {
+	.navbar-nav .nav_secciones {
+		margin-left: 30px;
+		font-size: 12px;
+		color: white;
+		font-family: Montserrat;
+		font-weight: 600;
+	}
+}
+
+.hablanos {
 	width: 100%;
 	height: 80px;
 	display: flex;
-
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 
 }
 
-.hablanos p{
+.hablanos p {
 	font-size: 4rem;
 	color: white;
 	font-family: Montserrat;
 	font-weight: 600;
 	text-shadow: 2px 2px 3px black;
 }
-.formulario{
+
+@media all and (max-width: 411px) {
+	.hablanos p {
+		font-size: 2.5rem;
+	}
+}
+
+
+.formulario {
 	display: flex;
 	align-content: center;
 	width: 100%;
@@ -144,9 +177,18 @@
 	align-items: center;
 }
 
+@media all and (max-width: 411px) {
+	.formulario {
+		width: 75%;
+		height: 750px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
 form {
 	width: 450px;
-	height: 600px;	
+	height: 600px;
 	margin: auto;
 	margin-bottom: 20px;
 	background: rgb(0, 0, 0, 0.0);
@@ -157,7 +199,8 @@ form {
 }
 
 
-input, textarea {
+input,
+textarea {
 	width: 100%;
 	margin-bottom: 20px;
 	padding: 7px;
@@ -196,11 +239,33 @@ footer {
 	width: 100%;
 	max-width: 1200px;
 	margin: auto;
-	padding: 20px;
+	padding: 18px;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.container-footer-all {
+		padding: 5px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.container-footer-all {
+		padding: 10px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.container-footer-all {
+		padding: 15px;
+	}
 }
 
 .container-footer {
 	display: flex;
+	text-align: center;
 	justify-content: space-between;
 	font-family: Montserrat;
 	font-weight: 400;
@@ -212,29 +277,95 @@ footer {
 }
 
 .columna1 h3 {
+	display: flex;
+	justify-content: center;
+	text-align: center;
 	font-size: 16px;
 	font-family: Montserrat;
 	font-weight: 400;
-	text-align: center;
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.columna1 h3 {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.columna1 h3 {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.columna1 h3 {
+		font-size: 16px;
+	}
+}
 .columna1 p {
 	font-size: 12px;
-	margin-top: 20px;
+	margin-top: 10px;
 	color: #c7c7c7;
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.columna1 p {
+		font-size: 9px;
+
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.columna1 p {
+		font-size: 12px;
+
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.columna1 p {
+		font-size: 16px;
+
+	}
+}
 .columna2 {
 	width: 33%;
 
 }
 
 .columna2 h3 {
+	display: flex;
+	justify-content: center;
 	font-size: 16px;
 	font-family: Montserrat;
 	font-weight: 400;
-	text-align: center;
+}
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.columna2 h3 {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.columna2 h3 {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.columna2 h3 {
+		font-size: 16px;
+	}
 }
 
 .row {
@@ -246,12 +377,36 @@ footer {
 }
 
 .row img {
-	width: 36px;
-	height: 36px;
+	width: 34px;
+	height: 34px;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
 	margin: 0;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.row img {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.row img {
+		width: 25px;
+		height: 25px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.row img {
+		width: 30px;
+		height: 30px;
+	}
 }
 
 .columna3 {
@@ -259,17 +414,40 @@ footer {
 }
 
 .columna3 h1 {
+	display: flex;
+	justify-content: center;
 	font-size: 16px;
-	text-align: center;
 	font-family: Montserrat;
 	font-weight: 400;
 	padding: 5px;
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.columna3 h1 {
+		font-size: 12px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.columna3 h1 {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.columna3 h1 {
+		font-size: 16px;
+	}
+}
+
+
 .row2 {
 	display: flex;
-	text-align: center;
 	justify-content: center;
+	text-align: center;
 }
 
 .row2 label {
@@ -278,6 +456,27 @@ footer {
 	margin-left: 10px;
 	max-width: 140px;
 	color: #c7c7c7;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.row2 label{
+		font-size: 9px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.row2 label {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.row2 label {
+		font-size: 12px;
+	}
 }
 
 .container-pie {
@@ -293,6 +492,53 @@ footer {
 	font-weight: 600;
 }
 
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.container-pie {
+		height: 15px;
+		padding: 5px;
+	}
+}
+
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.container-pie {
+		height: 18px;
+		padding: 5px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.container-pie {
+		height: 16px;
+		padding: 5px;
+	}
+}
+
 .derechos {
-	font-size: 10px;
+	font-size: 12px;
+}
+
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+
+	.derechos {
+		font-size: 8px;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.derechos {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.derechos {
+		font-size: 11px;
+	}
 }
