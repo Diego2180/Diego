@@ -902,6 +902,7 @@ footer {
 .row img {
 	width: 34px;
 	height: 34px;
+	border-radius: 10%;
 	margin-left: auto;
 	margin-right: auto;
 	padding: 0;
