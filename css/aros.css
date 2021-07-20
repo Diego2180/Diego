@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 * {
@@ -40,6 +39,7 @@
 .MV {
 	background-color: #e6e6e6;
 }
+
 .aros {
 	display: flex;
 	height: 650px;
@@ -72,7 +72,7 @@
 	}
 }
 
-.aros h5{
+.aros h5 {
 	align-items: center;
 	position: absolute;
 	font-size: 4rem;
@@ -145,7 +145,7 @@
 	}
 }
 
-.navbar_titulo:hover{
+.navbar_titulo:hover {
 	color: white;
 }
 
@@ -538,6 +538,7 @@ footer {
 		font-size: 16px;
 	}
 }
+
 .columna1 p {
 	font-size: 12px;
 	margin-top: 10px;
@@ -567,6 +568,7 @@ footer {
 
 	}
 }
+
 .columna2 {
 	width: 33%;
 
@@ -693,7 +695,7 @@ footer {
 
 @media only screen and (min-width:320px) and (max-width:480px) {
 
-	.row2 label{
+	.row2 label {
 		font-size: 9px;
 	}
 }

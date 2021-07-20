@@ -47,26 +47,26 @@
 
 @media only screen and (min-width:320px) and (max-width:480px) {
 	.MV {
-		
+
 		height: 500px;
 		background-image: url(../img/conjunto4.jpg);
-		
+
 	}
 }
 
 @media only screen and (min-width:576px) and (max-width:768px) {
 	.MV {
-		
+
 		height: 600px;
-		
+
 	}
 }
 
 @media only screen and (min-width:920px) and (max-width:1200px) {
 	.MV {
-		
+
 		height: 700px;
-		
+
 	}
 }
 
@@ -348,6 +348,7 @@ textarea {
 }
 
 @media only screen and (min-width:576px) and (max-width:768px) {
+
 	input,
 	textarea {
 		margin-bottom: 15px;
@@ -357,6 +358,7 @@ textarea {
 }
 
 @media only screen and (min-width:576px) and (max-width:768px) {
+
 	input,
 	textarea {
 		margin-bottom: 18px;

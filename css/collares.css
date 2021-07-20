@@ -569,6 +569,7 @@ footer {
 		font-size: 16px;
 	}
 }
+
 .columna1 p {
 	font-size: 12px;
 	margin-top: 10px;
@@ -598,6 +599,7 @@ footer {
 
 	}
 }
+
 .columna2 {
 	width: 33%;
 
@@ -724,7 +726,7 @@ footer {
 
 @media only screen and (min-width:320px) and (max-width:480px) {
 
-	.row2 label{
+	.row2 label {
 		font-size: 9px;
 	}
 }
