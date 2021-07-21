@@ -40,12 +40,13 @@
 	background-color: #e6e6e6;
 }
 
-.aros {
+
+.cadena {
 	display: flex;
 	height: 650px;
 	justify-content: center;
 	align-items: center;
-	background-image: url(../img/aros9.jpg);
+	background-image: url(../img/cadena5.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
@@ -53,54 +54,22 @@
 }
 
 @media only screen and (min-width:320px) and (max-width:480px) {
-	.aros {
+	.cadena {
 		height: 250px;
 	}
 }
 
 @media only screen and (min-width:576px) and (max-width:768px) {
 
-	.aros {
+	.cadena {
 		height: 350px;
 	}
 }
 
 @media only screen and (min-width:920px) and (max-width:1200px) {
 
-	.aros {
+	.cadena {
 		height: 550px;
-	}
-}
-
-.aros h5 {
-	align-items: center;
-	position: absolute;
-	font-size: 4rem;
-	font-family: Montserrat;
-	font-weight: 600;
-	color: hsla(0, 0%, 100%, 0.705);
-	color: white;
-	text-shadow: 2px 2px 3px black;
-}
-
-
-@media only screen and (min-width:320px) and (max-width:480px) {
-	.aros h5 {
-		font-size: 1.5rem;
-	}
-}
-
-@media only screen and (min-width:576px) and (max-width:768px) {
-
-	.aros h5 {
-		font-size: 2.5rem;
-	}
-}
-
-@media only screen and (min-width:920px) and (max-width:1200px) {
-
-	.aros h5 {
-		font-size: 3rem;
 	}
 }
 
@@ -113,7 +82,6 @@
 	padding: 20px;
 	z-index: 100;
 }
-
 
 .navbar_titulo {
 	font-size: 35px;
@@ -229,6 +197,7 @@
 	}
 }
 
+
 .centro {
 	width: 100%;
 	height: 30px;
@@ -274,6 +243,37 @@
 
 .centro p {
 	margin-top: 2px
+}
+
+.cadena h5 {
+	align-items: center;
+	position: absolute;
+	font-size: 4rem;
+	font-family: Montserrat;
+	font-weight: 600;
+	color: hsla(0, 0%, 100%, 0.705);
+	color: white;
+	text-shadow: 2px 2px 3px black;
+}
+
+@media only screen and (min-width:320px) and (max-width:480px) {
+	.cadena h5 {
+		font-size: 1.5rem;
+	}
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+	.cadena h5 {
+		font-size: 2.5rem;
+	}
+}
+
+@media only screen and (min-width:920px) and (max-width:1200px) {
+
+	.cadena h5 {
+		font-size: 3rem;
+	}
 }
 
 .fotos10 {
@@ -487,6 +487,8 @@ h3 {
 		font-size: 15px;
 	}
 }
+
+
 
 footer {
 	width: 100%;
