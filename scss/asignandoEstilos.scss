@@ -178,24 +178,6 @@
 }
 
 
-.navbar-light {
-    background-color: rgba(0, 0, 0, 0.4);
-    position: fixed;
-    width: 100%;
-    margin-top: 0;
-    height: 70px;
-    padding: 20px;
-    z-index: 100;
-}
-
-.navbar_titulo {
-    text-align: center;
-    font-size: 35px;
-    font-family: Montserrat;
-    font-weight: 600;
-    color: #fffffe;
-    text-decoration: none !important;
-}
 
 @media only screen and (min-width:320px) and (max-width:480px) {
 
@@ -218,34 +200,6 @@
     }
 }
 
-.navbar_titulo:hover {
-    color: white;
-}
-
-.a {
-    background-color: transparent;
-}
-
-.navbar-nav {
-    width: 100%;
-    margin-right: 0;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.dropdown-menu {
-    display: flex;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.dropdown-item {
-    font-family: Montserrat;
-    font-weight: 600;
-    z-index: 100;
-    color: white;
-}
-
 @media only screen and (min-width:320px) and (max-width:480px) {
     .dropdown-item {
         font-weight: 600;
@@ -266,16 +220,6 @@
         font-weight: 600;
         font-size: 18px;
     }
-}
-
-
-.navbar-nav .nav_secciones {
-    margin-left: 15px;
-    font-size: 20px;
-    color: white;
-    font-family: Montserrat;
-    font-weight: 600;
-
 }
 
 @media only screen and (min-width:320px) and (max-width:480px) {
@@ -711,6 +655,7 @@ h3 {
 .contenido:nth-child(3) {
     grid-row-start: span 2;
 }
+
 
 @media only screen and (min-width:320px) and (max-width:480px) {
 
