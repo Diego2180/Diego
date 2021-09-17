@@ -1,3 +1,18 @@
+
+
+// El usuario ingresa su nombre y recibe un saludo de bienvenida
+
+let nombre;
+const joyeria = "Bienvenidos al mundo M.V.JOYAS";
+
+
+nombre = prompt("Introduzca su nombre");
+alert("Hola " + nombre +  " " +  joyeria);
+console.log("Hola " + nombre +  " " +  joyeria);
+
+
+
+
 const joyasLua = [{
         id: 1,
         nombre: "Anillo Falange",
@@ -33,12 +48,17 @@ class accesorios {
     }
 }
 
+
 let accesorioElegido;
 let unidadesElegidas;
 let accesoriosSeleccionado;
 let elegirNuevoAccesorio;
 
 const carritoCompra = [];
+
+
+// Con el while quise que se valla incrementado los accesorios seleccionados si es que
+// el usuario desea comprar mas de 1
 
 iniciarCompra()
 while (elegirNuevoAccesorio.toUpperCase() == "SI") {
@@ -47,6 +67,9 @@ while (elegirNuevoAccesorio.toUpperCase() == "SI") {
 }
 
 verCarrito()
+
+// Con iniciar compra busque que el usuario una ves seleccionado un producto se le consulte si desea 
+// agregra el accesorio al carrito, sumar otro accesorio o finalizar la compra
 
 function iniciarCompra() {
     elegirAccesorio()
@@ -67,10 +90,14 @@ function iniciarCompra() {
     }
 }
 
+// Con la funcion elegirAccesorio comenzaria la compra donde se ingresaria el accesorio + cantidad 
+
 function elegirAccesorio() {
-    accesorioElegido = prompt("Elegí un accesorio: Anillo Falange, Anillo Estrella, Anillo Acer ");
+    accesorioElegido = prompt("Elegí un accesorio: ANILLO FALANGE, ANILLO ESTRELLA, ANILLO ACERO ");
     unidadesElegidas = parseInt(prompt("Ingresar cantidad"))
 }
+
+// Con la funcion consultarStock quise que valide la disponibilidad 
 
 function consultarStock(disponibilidadStock, stock) {
     if (disponibilidadStock >= stock) {
@@ -79,6 +106,9 @@ function consultarStock(disponibilidadStock, stock) {
         return false
     }
 }
+
+// En consultarDisponibilidad con el metodo find quise hacer que se recorra el stock que queda disponible 
+// identifique el accesorio para devolver con true si se encuentra disponible
 
 function consultarDisponibilidad(disponibilidadStock, stock) {
     accesoriosSeleccionado = joyasLua.find((p) => productoElegido == disponibilidadStock.toUpperCase())
@@ -100,10 +130,13 @@ function consultarDisponibilidad(disponibilidadStock, stock) {
 
 }
 
+//Con agregarAccesorios mediante el metodo push quise que se agreguen los accesorios seleccionados al carrito
 
 function agregarAccesorios(itemsSumar) {
     carritoCompra.push(itemsSumar)
 }
+
+// En ver carrito mediante el for quise hacer que sume el total de los seleccionado y arroje el precio final en consola
 
 function verCarrito() {
 
